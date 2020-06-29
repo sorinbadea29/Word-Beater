@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+:root{
+    --primary-color: #223E4A;
+    --secondary-color: #355667;
+    --special-color: #00BB38;
+    --btn-color: #FF3535;
+}
+
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    text-decoration: none;
+}
+
+html{
+    min-width:280px;
+}
+
+a, span{
+    color:var(--special-color);
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background:	var(--primary-color);
+}
+
+.container{
+    min-width:50vw;
+    display:grid;
+    grid-gap:5rem;
+    text-align:center;
+    padding: 3rem;
+}
+
+header{
+    min-width:100vw;
+    padding:2rem 0;
+    text-align:center;
+    font-size:2rem;
+    background: var(--secondary-color);
+}
+
+header h1{
+    margin:auto;
+}
+
+#top{
+    min-height:20vh;
+    width:100%;
+    display:grid;
+    grid-gap:1rem;
+    margin:auto;
+}
+
+#top p{
+    font-size:1rem;
+}
+
+#current-word{
+    font-size:2rem;
+}
+
+#input-and-reset{
+    display:flex;
+}
+
+#input-and-reset input {
+    margin:0;
+    padding:0.3rem;
+    width:150px;
+    border-style:none;
+    border-radius:0.2rem;
+    color:#000;
+    font-size:1rem;
+    text-indent:5%;
+}
+
+#input-and-reset #resetBtn{
+    margin-left:0.5rem;
+    text-decoration:none;
+    background:var(--btn-color);
+    border:none;
+    padding:0.3rem 1rem;
+    border-radius:0.2rem;
+    font-size:1rem;
+    color:#fff;
+}
+
+#input-and-reset #resetBtn:hover{
+    opacity: 0.8;
+}
+
+#message{
+    min-height:3rem;
+    font-size:2rem;
+}
+
+#time-and-score{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+}
+
+#instructions{
+    margin:auto;
+    padding:1rem;
+    text-align:center;
+    background: var(--secondary-color);
+    border-radius:0.3rem;
+}
+
+#instructions h3{
+    font-size:1.3rem;
+    font-weight:normal;
+    margin-bottom:0.5rem;
+    line-height: 2rem;
+}
+
+#instructions p{
+    width:70%;
+    line-height: 1.5rem;
+}
+
+/* Media */
+@media(max-width:420px){
+    header{
+        font-size:1.5rem;
+    }
+    .container{
+        padding:2rem;
+        grid-gap:2rem;
+    }
+    #time-score{
+        grid-template-columns: 1fr;
+        grid-gap:1rem;
+    }
+    #instructions p{
+        width:80%;
+        line-height: 1.5rem;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WordBeater</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><span ><a href="index.html">Word</a></span>Beater</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Word & Input -->
+    <div id="top">
+      <p>Type The Given Word Within <span id="seconds"></span> Seconds:</p>
+      <h2 id="current-word">hello</h2>
+      <div id="input-and-reset">
+        <input type="text" id="input" placeholder="Start typing..."  autofocus>
+        <a href="#" id="resetBtn">Reset</a>
+      </div>
+      <h4 id="message"></h4>
+    </div>
+
+    <!-- Time & Score Columns -->
+    <div id="time-and-score">
+      <div>
+        <h3>Time Left: <span id="time"></span></h3>
+      </div>
+
+      <div>
+        <h3>Score: <span id="score">0</span></h3>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div id ="instructions">
+        <h3>Instructions</h3>
+        <p>Type each word in the given amount of seconds to score. To play again press reset button or just type the current word. Your score will reset. To reload the page press the "Word" from title</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>     
